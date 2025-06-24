@@ -83,7 +83,7 @@ const TaskCard = ({
                   {task.priority}
                 </Badge>
                 
-                <div className={`flex items-center text-sm ${
+<div className={`flex items-center text-sm ${
                   isOverdue ? 'text-error' : 'text-surface-500'
                 }`}>
                   <ApperIcon 
@@ -91,7 +91,7 @@ const TaskCard = ({
                     size={14} 
                     className="mr-1" 
                   />
-                  {format(new Date(task.dueDate), 'MMM d, yyyy')}
+                  {format(new Date(task.due_date), 'MMM d, yyyy')}
                 </div>
               </div>
 
