@@ -53,11 +53,11 @@ const Contacts = () => {
     } catch (err) {
       console.error('Search failed:', err);
       // Fallback to client-side search
-      const filtered = contacts.filter(contact =>
-        contact.name.toLowerCase().includes(query.toLowerCase()) ||
-        contact.email.toLowerCase().includes(query.toLowerCase()) ||
-        contact.role.toLowerCase().includes(query.toLowerCase()) ||
-        contact.department.toLowerCase().includes(query.toLowerCase())
+const filtered = contacts.filter(contact =>
+        contact.Name?.toLowerCase().includes(query.toLowerCase()) ||
+        contact.email?.toLowerCase().includes(query.toLowerCase()) ||
+        contact.role?.toLowerCase().includes(query.toLowerCase()) ||
+        contact.department?.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredContacts(filtered);
     }

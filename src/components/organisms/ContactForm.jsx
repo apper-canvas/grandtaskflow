@@ -21,9 +21,9 @@ const ContactForm = ({
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    if (contact) {
+if (contact) {
       setFormData({
-        name: contact.name || '',
+        name: contact.Name || '',
         email: contact.email || '',
         phone: contact.phone || '',
         role: contact.role || '',

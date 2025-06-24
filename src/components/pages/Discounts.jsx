@@ -60,7 +60,7 @@ const Discounts = () => {
 
   // Get unique categories for filter tabs
   const categories = [...new Set(discounts.map(d => d.category))];
-  const activeDiscounts = discounts.filter(d => new Date(d.expiryDate) > new Date());
+const activeDiscounts = discounts.filter(d => new Date(d.expiry_date) > new Date());
 
   const filterTabs = [
     { 

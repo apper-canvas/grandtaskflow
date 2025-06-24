@@ -61,8 +61,8 @@ const Tasks = () => {
       const priorityOrder = { high: 3, medium: 2, low: 1 };
       if (priorityOrder[a.priority] !== priorityOrder[b.priority]) {
         return priorityOrder[b.priority] - priorityOrder[a.priority];
-      }
-      return new Date(a.dueDate) - new Date(b.dueDate);
+}
+      return new Date(a.due_date) - new Date(b.due_date);
     });
 
     setFilteredTasks(filtered);

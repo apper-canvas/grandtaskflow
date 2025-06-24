@@ -21,10 +21,10 @@ const TaskForm = ({
 
   useEffect(() => {
     if (task) {
-      setFormData({
+setFormData({
         title: task.title || '',
         description: task.description || '',
-        dueDate: task.dueDate || '',
+        dueDate: task.due_date || '',
         priority: task.priority || 'medium'
       });
     } else {

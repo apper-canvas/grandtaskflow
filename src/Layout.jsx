@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import ApperIcon from '@/components/ApperIcon';
-import { routeArray } from '@/config/routes';
-
+import React, { useState } from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
+import "@/index.css";
+import { routeArray } from "@/config/routes";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
 const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -81,9 +82,9 @@ const Layout = () => {
                 >
                   <ApperIcon name={route.icon} className="w-5 h-5" />
                   <span className="font-medium">{route.label}</span>
-                </NavLink>
+</NavLink>
               ))}
-            </nav>
+</nav>
           </motion.div>
         )}
       </header>
