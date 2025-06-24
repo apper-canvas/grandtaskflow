@@ -1,5 +1,6 @@
 import Tasks from '@/components/pages/Tasks';
 import Contacts from '@/components/pages/Contacts';
+import Deals from '@/components/pages/Deals';
 import Discounts from '@/components/pages/Discounts';
 
 export const routes = {
@@ -16,6 +17,13 @@ export const routes = {
     path: '/contacts',
     icon: 'Users',
     component: Contacts
+  },
+  deals: {
+    id: 'deals',
+    label: 'Deals',
+    path: '/deals',
+    icon: 'Briefcase',
+    component: Deals
   },
   discounts: {
     id: 'discounts',
